@@ -1,0 +1,32 @@
+# Limitless Trading Bot - Ready for Spread Farming
+# enable_trading is false by default for safety
+
+venue: limitless_exchange
+enable_trading: false
+
+credentials:
+  # ضع المفتاح الخاص هنا أو استخدم Variables في Railway
+  # private_key: "0x..."
+  # api_key: ""
+  # api_secret: ""
+
+risk:
+  circuit_breaker:
+    max_consecutive_large_trades: 5
+    window_seconds: 60
+    cooldown_seconds: 300
+  depth_guard:
+    min_orderbook_depth_usd: 250
+  trade_floor:
+    min_trade_size_usd: 5
+
+strategies:
+  spread_farming:
+    enabled: true
+    target_spread_cents: 0.5
+
+  resolution_sniper:
+    enabled: false
+
+  orderbook_imbalance:
+    enabled: false
