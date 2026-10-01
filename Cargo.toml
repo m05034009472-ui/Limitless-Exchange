@@ -2,7 +2,7 @@
 name = "limitless-exchange-trading-bot"
 version = "0.1.0"
 edition = "2021"
-rust-version = "1.85"
+rust-version = "1.89"
 license = "MIT"
 description = "Limitless trading bot — built on the Prediction Market Toolkits engine."
 repository = "https://github.com/HarrierOnChain/Limitless-Exchange"
